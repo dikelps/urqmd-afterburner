@@ -35,6 +35,8 @@ if(NATIVE)
   endif()
 endif()
 
+string(APPEND CMAKE_Fortran_FLAGS " -fallow-argument-mismatch")
+
 add_subdirectory(osc2u)
 add_subdirectory(urqmd)
 
